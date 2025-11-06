@@ -42,7 +42,7 @@ A simple Python script to download YouTube videos and playlists with progress tr
 
 ## Example
 
-```
+```bash
 $ python yd.py
 Enter YouTube URL: https://www.youtube.com/watch?v=xnP7qKxwzjg
 Download (v)ideo or (a)udio only? [v/a]: v
