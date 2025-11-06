@@ -1,0 +1,2 @@
+pytubefix>=0.6.0  # Latest stable version as of 2025-11-07
+colorama>=0.4.6    # Latest stable version as of 2025-11-07
