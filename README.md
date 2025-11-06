@@ -42,7 +42,7 @@ A simple Python script to download YouTube videos and playlists with progress tr
 
 ## Example
 
-    ```bash
+```bash
     $ python yd.py
     Enter YouTube URL: https://www.youtube.com/watch?v=xnP7qKxwzjg
     Download (v)ideo or (a)udio only? [v/a]: v
@@ -58,7 +58,7 @@ A simple Python script to download YouTube videos and playlists with progress tr
     💾 Estimated final size: 17.62 MB
     🔄 Merging audio and video ...
     ✅ Download complete: /Users/icarus/python/downloads/Tame Impala - Dracula (Official Video) (720p).mp4
-    ```
+```
 
 ## Features in Detail
 
