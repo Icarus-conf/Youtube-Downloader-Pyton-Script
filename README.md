@@ -42,22 +42,22 @@ A simple Python script to download YouTube videos and playlists with progress tr
 
 ## Example
 
-```bash
-    $ python yd.py
-    Enter YouTube URL: https://www.youtube.com/watch?v=xnP7qKxwzjg
-    Download (v)ideo or (a)udio only? [v/a]: v
-    Quality (1080, 720, 480, 360): 720
+```
+$ python yd.py
+Enter YouTube URL: https://www.youtube.com/watch?v=xnP7qKxwzjg
+Download (v)ideo or (a)udio only? [v/a]: v
+Quality (1080, 720, 480, 360): 720
 
-    🎬 Tame Impala - Dracula (Official Video)
-    📺 tameimpalaVEVO
-    ⏱ Duration: 3m 53s
+🎬 Tame Impala - Dracula (Official Video)
+📺 tameimpalaVEVO
+⏱ Duration: 3m 53s
 
-    🎞 Available resolutions: 2160p, 1440p, 1080p, 720p, 480p, 360p, 240p, 144p
-    🎥 Downloading video (720p) ...
-    🎧 Downloading audio (160kbps) ...
-    💾 Estimated final size: 17.62 MB
-    🔄 Merging audio and video ...
-    ✅ Download complete: /Users/icarus/python/downloads/Tame Impala - Dracula (Official Video) (720p).mp4
+🎞 Available resolutions: 2160p, 1440p, 1080p, 720p, 480p, 360p, 240p, 144p
+🎥 Downloading video (720p) ...
+🎧 Downloading audio (160kbps) ...
+💾 Estimated final size: 17.62 MB
+🔄 Merging audio and video ...
+✅ Download complete: /Users/icarus/python/downloads/Tame Impala - Dracula (Official Video) (720p).mp4
 ```
 
 ## Features in Detail
