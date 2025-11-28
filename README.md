@@ -1,73 +1,66 @@
-# YouTube Video Downloader
+# 📺 YouTube Downloader Web App
 
-A simple Python script to download YouTube videos and playlists with progress tracking and proper error handling.
+A premium, modern web application for downloading YouTube videos and audio with real-time progress tracking. Built with Flask, Socket.IO, and a beautiful glassmorphism UI.
 
-## Features
+![Premium Interface](/Users/icarus/.gemini/antigravity/brain/62578632-dd18-4e07-af52-272da7e3af93/thumbnail_verification_final_1764371684042.png)
 
-- Download single YouTube videos
-- Download entire playlists
-- Progress bar with download status
-- Clean filenames (removes illegal characters)
-- Prevents file overwrites with automatic numbering
-- Supports both standard YouTube URLs and youtu.be short links
+## ✨ Features
 
-## Prerequisites
+### 🎥 Core Functionality
+- **High Quality Video**: Download videos in 1080p, 720p, 480p, or 360p.
+- **Audio Extraction**: Convert videos to high-quality MP3 audio automatically.
+- **Playlist Support**: Download entire playlists with a single click.
+- **Real-time Progress**: Live progress bar and status updates via WebSockets.
 
-- Python 3.6+
-- Required packages (install via `pip`):
-    ```bash
-    pip install pytubefix colorama
-    ```
+### 💎 Premium Experience
+- **Smart Paste**: One-click button to paste URLs from your clipboard.
+- **Visual History**: View your recent downloads with video thumbnails.
+- **File Management**: Delete unwanted files directly from the interface.
+- **Toast Notifications**: Smooth, non-intrusive alerts for actions.
+- **Dark Mode UI**: Sleek, responsive design with glassmorphism effects.
 
-## Usage
+## 🚀 Quick Start
 
-1. Clone this repository or download the script
-    ```bash
-    git clone https://github.com/yourusername/youtube-downloader.git
-    cd youtube-downloader
-    ```
-
-2. Install the required dependencies
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the script:
-    ```bash
-    python yd.py
-    ```
-
-4. When prompted, enter the YouTube URL (video or playlist)
-5. The download will start automatically and save to a `downloads` folder
-
-## Example
+### Option 1: Docker (Recommended)
+The easiest way to run the app. Requires Docker Desktop.
 
 ```bash
-$ python yd.py
-Enter YouTube URL: https://www.youtube.com/watch?v=xnP7qKxwzjg
-Download (v)ideo or (a)udio only? [v/a]: v
-Quality (1080, 720, 480, 360): 720
+# Start the app
+docker compose up -d
 
-🎬 Tame Impala - Dracula (Official Video)
-📺 tameimpalaVEVO
-⏱ Duration: 3m 53s
-
-🎞 Available resolutions: 2160p, 1440p, 1080p, 720p, 480p, 360p, 240p, 144p
-🎥 Downloading video (720p) ...
-🎧 Downloading audio (160kbps) ...
-💾 Estimated final size: 17.62 MB
-🔄 Merging audio and video ...
-✅ Download complete: /Users/icarus/python/downloads/Tame Impala - Dracula (Official Video) (720p).mp4
+# Stop the app
+docker compose down
 ```
+Access the app at **http://localhost:5001**
 
-## Features in Detail
+### Option 2: Local Python Setup
+If you prefer running without Docker. Requires Python 3.8+ and ffmpeg.
 
-- **Smart URL Handling**: Automatically handles youtu.be short links and normalizes YouTube URLs
-- **Safe Filenames**: Removes special characters that could cause issues on different operating systems
-- **No Overwrites**: Automatically appends numbers to avoid overwriting existing files
-- **Progress Tracking**: See download progress and speed in real-time
+1. **Install ffmpeg**
+   ```bash
+   brew install ffmpeg  # macOS
+   sudo apt install ffmpeg  # Ubuntu
+   ```
 
+2. **Install Dependencies**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
 
-## Note
+3. **Run the Server**
+   ```bash
+   python app.py
+   ```
 
-Please respect YouTube's Terms of Service and only download videos you have the right to access.
+## 🛠 Tech Stack
+
+- **Backend**: Flask, Flask-SocketIO, Pytubefix
+- **Frontend**: HTML5, CSS3 (Variables, Flexbox/Grid), JavaScript (ES6+)
+- **Real-time**: Socket.IO (WebSockets)
+- **Processing**: FFmpeg (Audio conversion/merging)
+- **Deployment**: Docker & Docker Compose
+
+## 📝 License
+MIT License - Free to use and modify.
